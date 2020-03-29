@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Pygmalion</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Pygmalion</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+            <li><a href="/pygmalion">Demo</a></li>
+            <li><a href="https://github.com/bitbyt3r/pygmalion">GitHub</a></li>
+            <li><a href="https://pygmalion.readthedocs.io/en/latest/">Documentation</a></li>
+          </ul>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="/">Home</a></li>
+        <li><a href="/pygmalion">Demo</a></li>
+        <li><a href="https://github.com/bitbyt3r/pygmalion">GitHub</a></li>
+        <li><a href="https://pygmalion.readthedocs.io/en/latest/">Documentation</a></li>
+      </ul>
+      <div class="row">
+        <h3>Introduction</h3>
+        <p><a href="https://en.wikipedia.org/wiki/Photometric_stereo">Photometric Stereo</a> is a method of acquiring depth images and 3D reconstructions 
+          from a single viewpoint of a scene captured under varying lighting conditions. Photogrammetry is a separate class of methods that generate
+          a 3D reconstruction using multiple viewpoints under a single lighting condition. Pygmalion is a piece of software that combines these methods
+          along with a general camera control framework to make 3D reconstruction more accessible and reliable.
+        </p>
+        <p>Pygmalion is still very much a work in progress.</p>
+        <a href="https://copr.fedorainfracloud.org/coprs/bitbyt3r/Pygmalion/package/Pygmalion/"><img src="https://copr.fedorainfracloud.org/coprs/bitbyt3r/Pygmalion/package/Pygmalion/status_image/last_build.png" /></a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, {});
+      })
+    </script>
+  </body>
+</html>

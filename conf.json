@@ -1,0 +1,12 @@
+{
+    "db_user": "pygmalion",
+    "db_pass": "password",
+    "db_host": "localhost",
+    "db_database": "pygmalion",
+    "productionTip": true,
+    "wamp": {
+        "url": "ws://localhost:8080/ws",
+        "realm": "realm1",
+        "debug": true
+    }
+}
